@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student2" class="com.hoon.test.Student">
+		<constructor-arg value="김유신" />
+		<constructor-arg value="25" />
+		<constructor-arg>
+			<list>
+				<value>운동</value>
+				<value>독서</value>
+			</list>
+		</constructor-arg>
+		<property name="weight" value="80"></property>
+		<property name="height" value="180"></property>
+	</bean>
+	
+</beans>
